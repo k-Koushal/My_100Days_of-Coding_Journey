@@ -1,0 +1,352 @@
+*{
+    margin:0;
+    padding:0;
+}
+:root{
+    --fs:'Poppins', sans-serif;
+    --headcolor:#192f60;
+    --headsml:#636f88;
+
+
+}
+.head{
+    position:fixed;
+    top:0;
+    z-index: 5;
+    display:flex;
+    justify-content:space-between;
+    background-color:green;
+    width:100%;
+    height:4rem;
+    align-items:center;
+    z-index: 5;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background: white;
+    color: green;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 13%;
+}
+.elements2{
+    display:flex;
+    width:80%;
+    justify-content:flex-end;
+    align-items:center;
+    padding:10px;
+}
+.item1 ,.item2{
+    text-decoration: none;
+    color:white;
+    font-size: 1rem;
+    margin:0.5rem;
+    font-size: 15px;
+    font-family:var(--fs);
+}
+.item1{
+    border:1px solid rgb(255, 255, 255,0);
+    padding:5px 7px  ;
+}
+.item2{
+    border:1px solid white;
+    padding:0.4rem;
+    text-align: center;
+}
+.item2:hover,.item1:hover{
+    background:rgb(255, 255, 255);
+    color:var(--headcolor);
+    font-size:15.2px;
+    font-weight: 550;
+}
+.container{
+    margin:0;
+    position: relative;
+    top:4rem;
+    width:100%;
+ 
+    
+}
+.container>h1{
+    position: relative;
+    font-family:var(--fs);
+    color:var(--headcolor);
+    font-size: 1.7rem;
+    margin-left: 13%;
+    margin-top:1.5rem;
+}
+.cols{
+    position: relative;
+    width:100%;
+    margin-top: 1rem;
+    display:flex;
+    flex-direction: row;
+    align-items:flex-start
+    
+
+}
+.menu{
+    display:none;
+}
+.col2{
+    padding:0;
+    display:flex;
+    flex-direction: column;
+    margin-right: 3rem;
+    width: clamp(300px,50%,600px);
+    height:650px;
+    margin-left: 67px;
+}
+.row1, .row2{
+    flex-grow: 1;
+    position: relative;
+    width:100%;
+    height:290px;
+    background:rgb(255, 255, 255);
+    box-shadow: 1px 3px 6px rgb(0, 0, 0,0.2);
+
+}
+.row2{
+    margin-top:2rem;
+}
+.pagelist{
+    flex-grow: 1;
+    width:100%;
+    height:30px;
+    box-shadow: 1px 3px 6px rgb(0, 0, 0,0.2);
+
+}
+/*co1*/
+.col1{
+    width: 13rem;
+    height:580px;
+    margin-left: 13%;
+    background:rgb(255, 255, 255);
+    box-shadow: 0px 0px 6px rgb(0, 0, 0,0.2);
+    padding: 2%;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+.col1 h3{
+    font-size:18px;
+    color:#192F60;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.col1>select{
+    width:180px;
+    height:38px;
+    color:#919191;
+    border:1px solid #c5c5c5;
+    margin-bottom: 4%;
+}
+.col1>select>option{
+    color:#919191;
+    text-align: center;
+
+}
+.col1 h5{
+    margin-top: 9%;
+    margin-bottom: 0%;
+    font-size: 14px;
+    color:#192F60;
+    font-family:'Poppins', sans-serif;
+    font-weight: 400;
+}
+.col1 p{
+    margin-top:5%;
+    font-size:14px;
+    color:#8C96AB;
+    font-family:'Poppins', sans-serif ;
+    font-weight: normal;
+
+}
+
+/*Media queries*/
+
+@media screen and (max-width:900px){
+    *{
+        padding:0;
+        margin:0;
+        text-align:center;
+    }
+    .head{
+        background:green;
+    }
+    .logo{
+        color:green;
+    }
+    .container{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        background:black;
+        padding:0;
+        margin:0;
+      
+    }
+    .container h1{
+        margin-left: 2%;
+        margin-right:2%;
+        align-self: center;
+        font-size: 20px;
+        color:whitesmoke;
+    }
+    .cols{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+
+    }
+    .col1{
+        display:none;
+    }
+    .menu{
+        display:flex;
+        flex-direction: row;
+        width:90%;
+        height:60px;
+        background:white;
+        margin-left: 2%;
+        justify-content:space-evenly;
+        background:black;
+     
+    }
+    .opt>select>option{
+        font-size: 15px;
+        text-align: center;
+    }
+    .opt>select{
+        width:100%;
+        height:100%;
+        font-size: 15px;
+        font-family: 'poppins',sans-serif;
+        background:black;
+        border:none;
+        color:rgb(192, 192, 192);
+    }
+    
+    .col2{
+        width:70%;
+        margin-top: 2rem;
+        margin-left: 2%;
+        margin-right:2%;
+      
+    }
+    .row1,.row2{
+        background:rgba(151, 151, 151, 0.2);
+        box-shadow:3px 5px 6px rgb(255, 255, 255,0.3);
+        border-radius:0.8rem;
+        display:flex;
+        flex-direction: column;
+        text-decoration: None;
+        color:white;
+        font-family: var(--fs);
+    }
+    .pic{
+        position: relative;
+        width:100%;
+        height:170px;
+        background:url(https://i.ibb.co/wLXKJhG/homebg.jpg) no-repeat;
+        background-size:cover;
+        background-position-y: 90%;
+    }
+    .details{
+        position: relative;
+        padding:3%
+;        text-align: left;
+    }
+    .details>p{
+        text-align: left;
+    }
+    .loc{
+        font-size: 11px;
+        margin-bottom: 9px;
+        color:rgb(184, 183, 183);
+    }
+    .name{
+        font-size: 27px;
+        font-family: var(--fs);
+        line-height:1;
+        margin-top: 10px;
+    }
+    .add{
+        font-size: 16px;
+        margin-top:5px;
+        color:rgb(184, 183, 183);
+        
+
+    }
+    .det2{
+        display:flex;
+        padding-left: 5px;
+        padding-right: 5px;
+        justify-content:space-between;
+    }
+    .cus,.c4t{
+        font-size: 13px;
+    }
+    .offer{
+        position:absolute;
+        top:20px;
+        right:20px;
+    }
+    .offer>span{
+        position: relative;
+        background:rgb(1, 87, 1);
+        width:15px;
+        height:7px;
+        padding:2px 5px;
+        border-radius: 1rem;
+        font-size: 15px;
+    }
+    .offer>span>i{
+        position:relative;
+        bottom:2px;
+        font-size: 10px;
+    }
+    .row2>.pic{
+        background:url(https://i.ibb.co/cvtYpGb/ludovic-avice-yr-s-W-x9a-Hk-unsplash.jpg) no-repeat;
+        background-size: cover;
+        background-position-y:50% ;
+    }
+   
+}
+
+
+/*Media queries*/
+
+@media screen and (max-width:450px){
+    .opt>select{
+        font-size: 15px;
+    }
+    
+    .name{
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    .add{
+        font-size:14px;
+    }
+  .cus,.c4t{
+      font-size: 13px;
+  }
+  .loc{
+      font-size: 9px;
+  }
+  .det2{
+      position:relative;
+    }
+    .row1:hover{
+        transform:scale(0.99);
+    }
+    .row2:hover{
+        transform:scale(0.99);
+    }
+}
+

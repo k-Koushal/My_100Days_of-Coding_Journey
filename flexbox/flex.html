@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6606e36ae0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="flex.css">
+    <title>Flexbox-Practice</title>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <a href="https://edureka-intership.github.io/assignment-1-k-Koushal/" class="logo">D!</a>
+            <div class="elements2">
+                <a href="#" class="element2 item1">Login</a>
+                <a href="#" class="element2 item2">Create an account</a>
+            </div><!--elements2-->
+        </div>
+    </header>
+    <div class="container">
+        <h1>Best Breakfast Places in Hyderabad</h1>
+        <div class="cols">
+            <div class="menu">
+                <div class="opt">
+                    <select>
+                        <option>Select Location</option>
+                        <option >Hitech City</option>
+                        <option>Madhapur</option>
+                        <option>Kondapur</option>
+                    </select>
+                </div>
+                <div class="opt">
+                    <select>
+                        <option>Cuisine</option>
+                        <option >North Indian</option>
+                        <option>Goan</option>
+                        <option>Italian</option>
+                        <option>continental</option>
+                    </select>
+                </div>
+            </div>
+
+                <div class="menu">
+                <div class="opt two">
+                    <select>
+                        <option class=".ptn">Cost for two</option>
+                        <option >less than `500</option>
+                        <option>`500-`1000</option>
+                        <option>`1000-`1500</option>
+                        <option>more than `1500</option>
+                    </select>
+                </div>
+                <div class="opt">
+                    <select>
+                        <option>Sort by Price</option>
+                        <option > Low to high</option>
+                        <option> High to Low</option>
+                    </select>
+                </div>
+            </div><!--menu-->
+            <div class="col1">
+                <h3>Filters</h3>
+                <h5>Select Location</h5>
+                <select>
+                    <option id="opening">Select location</option>
+                    <option >Hitech City</option>
+                    <option>Madhapur</option>
+                    <option>Kondapur</option>
+                </select>
+                <h5>Cuisine</h5>
+               <div>
+                    <p><input type="checkbox">  North Indian</p>
+                    <p><input type="checkbox">  South Indian</p>
+                    <p><input type="checkbox">  Italian</p>
+                    <p><input type="checkbox">  Continental</p>
+                    <p><input type="checkbox">  Thai</p>
+                </div> 
+                <h5>Cost for two</h5>
+                <div>
+                    <p><input type="radio">  less than `500</p>
+                    <p><input type="radio">  `500 -`1000</p> 
+                    <p><input type="radio"> `1000 -`1500</p>
+                    <p><input type="radio"> `1500-`2000</p>
+                    <p><input type="radio">  more than `2000</p>
+                </div>
+                <h5>Sort</h5>
+                <div>
+                    <p><input type="radio"> Price low to high</p>
+                    <p><input type="radio">  price high to low</p>
+                </div>
+
+            </div><!--col1-->
+            <div class="col2">
+                <a class="row1" href="#">
+                  <div class="pic"></div>
+                  <div class="details">
+                      <p class="name">TEERASEN CAFE</p>
+                      <p class="add">Banjara Hills</p>
+                      <p class="loc">8-2/418/1/2, Opp. Goethe Zentrum, Road 4.</p>
+                        <div class="det2">
+                            <p class="cus">Cuisine : Italian</p>
+                            <p class="c4t">Rs.700 for two</p>
+                        </div>
+                        <div class="offer">
+                            <span> 4.0 <i class="fa-solid fa-star"> </i></span>
+                        </div>
+                    </div>
+    
+                </a><!--row1-->
+                <a class="row2" href="#">
+                    <div class="pic"></div>
+                    <div class="details">
+                        <p class="name">AURA CAFE</p>
+                        <p class="add">Jubilee Hills</p>
+                        <p class="loc">8-2/418/1/2, Opp. Goethe Zentrum, Road 4.</p>
+                          <div class="det2">
+                              <p class="cus">Cuisine : continental</p>
+                              <p class="c4t">Rs.900 for two</p>
+                          </div>
+                          <div class="offer">
+                              <span> 4.2 <i class="fa-solid fa-star"> </i></span>
+                          </div>
+                      </div>
+    
+                </a><!--row2-->
+                
+    
+                <div class="pagelist"></div>
+            </div><!--col2-->
+
+        </div><!--cols-->
+       
+        
+    </div><!--Container-->
+    <footer>
+
+    </footer>
+    <script src="flexbox\menu.js" rel="menu-toggle"></script>
+</body>
+</html>
